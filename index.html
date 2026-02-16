@@ -6,6 +6,7 @@
     <title>Sign Up Form</title>
 
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
   <main class="signup-layout">
@@ -22,43 +23,50 @@
     <section class="right-panel">
       <h1>Start creating new Ideas!</h1>
 
-      <form method="post">
+    <form method="post" id="theForm">
 
+      <div class="form-row">
         <div class="form-group">
           <label for="first_name">First Name</label>
-          <input type="text" id="first_name" name="first_name" required>
+          <input type="text" id="first_name" name="first_name" placeholder="Lauren" required>
         </div>
 
         <div class="form-group">
           <label for="last_name">Last Name</label>
-          <input type="text" id="last_name" name="last_name" required>
+          <input type="text" id="last_name" name="last_name" placeholder="Smith" required>
         </div>
+      </div>
 
+      <div class="form-row">
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" placeholder="lauren@email.com" required>
         </div>
 
         <div class="form-group">
           <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone">
+          <input type="tel" id="phone" name="phone" placeholder="123456789">
         </div>
+      </div>
 
+      <div class="form-row">
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" id="password" name="password" minlength="8" required>
+          <input type="password" id="password" name="password" minlength="8" placeholder="*******" required>
         </div>
 
         <div class="form-group">
           <label for="confirm_password">Confirm Password</label>
-          <input type="password" id="confirm_password" name="confirm_password" required>
+          <input type="password" id="confirm_password" name="confirm_password" minlength="8" placeholder="*******" required>
         </div>
+      </div>
 
-        <button type="submit">Create Account</button>
+      <button type="submit">Create Account</button>
 
-        <p>Already have an account? <a href="#">Log in</a></p>
+      <p>Already have an account? <a href="#">Log in</a></p>
 
-      </form>
+    </form>
+
     </section>
 
   </main>
